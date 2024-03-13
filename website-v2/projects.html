@@ -513,7 +513,7 @@
     }
     async function fetchData() {
       try {
-        var apiUrl = "https://cms-managment.vercel.app/cms/api/page-data/tfc/index_page";
+        var apiUrl = "https://cms-managment.vercel.app/cms/api/page-data/tfc/project_page";
 
         // Fetch data from the API
         const response = await fetch(apiUrl);
@@ -672,7 +672,7 @@
           ele.innerHTML = popInput
         }
       }
-      const apiUrl = `https://cms-managment.vercel.app/cms/update-by-key/${elementId}/index_page/tfc`;
+      const apiUrl = `https://cms-managment.vercel.app/cms/update-by-key/${elementId}/project_page/tfc`;
 
       const requestBody = {
         value: popInput,
