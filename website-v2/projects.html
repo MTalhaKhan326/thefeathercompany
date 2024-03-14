@@ -717,6 +717,19 @@
       }
     })
 
+    let isEditable = getQueryParameter('edit') == 'true'
+      if (isEditable) {
+        //console.log("text",document.body.textContent) // get whole html text
+        document.querySelectorAll('a').forEach(item => {
+          if (item?.href?.length && item.href[0] != '#') {
+            const url = new URL(item.href)
+            console.log("URL", url)
+            url.searchParams.set('edit', 'true')
+            item.href = url.toString()
+          }
+        })
+      }
+
   </script>
   
   
