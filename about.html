@@ -1,0 +1,700 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta  charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Feather Company</title> 
+<style>
+  /* Styles for the popup */
+  .popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 60%;
+    transform: translate(-50%, -50%);
+    padding: 5px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    z-index: 999;
+  }
+
+  .hidden {
+    display: none;
+  }
+</style>
+
+
+<!-- Favicons -->
+<link rel="shortcut icon" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png">
+
+<!-- Styles -->
+<link href="https://fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet" media="screen">
+</head>
+<body>
+  
+    <!-- Loader -->
+
+    <div class="loader">
+      <div class="page-lines">
+        <div class="container">
+          <div class="col-line col-xs-4">
+            <div class="line"></div>
+          </div>
+          <div class="col-line col-xs-4">
+            <div class="line"></div>
+          </div>
+          <div class="col-line col-xs-4">
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+        </div>
+      </div>
+      <div class="loader-brand"> 
+        <div class="sk-folding-cube">
+          <div class="sk-cube1 sk-cube"></div>
+          <div class="sk-cube2 sk-cube"></div>
+          <div class="sk-cube4 sk-cube"></div>
+          <div class="sk-cube3 sk-cube"></div>
+        </div>
+      </div>
+    </div>
+
+    <header id="top" class="header-inner">
+      <div class="brand-panel">
+        <a href="#" class="brand" id="aboutlogo">
+          thefeathercompanyarch
+        </a>
+        <div class="brand-name" id="aboutBrandName">thefeathercompanyarch</div>
+      </div>
+      <div class="header-phone" id="headerPhone">+7 (212) 674-25-10</div>
+      <div class="vertical-panel-content">
+        <div class="vertical-panel-info">
+            <div class="line"></div>
+         </div>
+        <ul class="social-list">
+          <li><a href="" class="fa fa-instagram"></a></li>
+          <li><a href="" class="fa fa-twitter"></a></li>
+          <li><a href="" class="fa fa-behance"></a></li>
+          <li><a href="" class="fa fa-facebook"></a></li>
+         </ul>  
+      </div>
+
+      <!-- Navigation Desctop -->
+
+      <nav class="navbar-desctop visible-md visible-lg">
+        <div class="container">
+          <a href="#top" class="brand js-target-scroll">
+            go<span class="text-primary">.</span>arch
+          </a>
+          <ul class="navbar-desctop-menu">
+            <li>
+              <a href="index.html">Home</a>
+              <ul>
+                <li><a href="index.html">Home - Light</a></li>
+                <li>
+                  <a href="../dark/index.html">Home - Dark</a>
+                </li>
+              </ul>
+            </li>
+            <li class="active">
+              <a href="about.html">About us</a>
+            </li>
+            <li>
+              <a href="projects.html">Projects</a>
+              <ul>
+                <li><a href="projects.html">Projects - List</a></li>
+                <li>
+                  <a href="project.html">Project - details</a>
+                </li>
+              </ul>
+            </li>  
+            <li>
+              <a href="blog.html">Blog</a>
+              <ul>
+                <li><a href="blog.html">Blog - List</a></li>
+                <li>
+                  <a href="blog-details.html">Blog - Post</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="contacts.html">Contacts</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Navigation Mobile -->
+
+      <nav class="navbar-mobile">
+        <a href="#top" class="brand js-target-scroll">
+          go<span class="text-primary">.</span>arch
+        </a>
+
+        <!-- Navbar Collapse -->
+
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-mobile">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbar-mobile"> 
+          <ul class="navbar-nav-mobile">
+            <li>
+              <a href="#">Home <i class="fa fa-angle-down"></i></a>
+              <ul>
+                <li><a href="index.html">Home - Light</a></li>
+                <li>
+                  <a href="../dark/index.html">Home - Dark</a>
+                </li>
+              </ul>
+            </li>
+            <li class="active">
+              <a href="about.html">About us</a>
+            </li>
+            <li>
+              <a href="#">Projects <i class="fa fa-angle-down"></i></a>
+              <ul>
+                <li><a href="projects.html">Projects - List</a></li>
+                <li>
+                  <a href="project.html">Project - Details</a>
+                </li>
+              </ul>
+            </li>  
+            <li>
+              <a href="#">Blog <i class="fa fa-angle-down"></i></a>
+              <ul>
+                <li><a href="blog.html">Blog - List</a></li>
+                <li>
+                  <a href="blog-details.html">Blog - Post</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="contacts.html">Contacts</a>
+            </li>
+          </ul>
+        </div>
+      </nav> 
+    </header>
+
+  <!-- Layout -->
+
+  <div class="layout">
+    
+    <!-- Home -->
+    
+    <main class="main main-inner bg-about" data-stellar-background-ratio="0.6">
+      <div class="container">
+        <header class="main-header">
+          <h1 id="AboutHeader1">About Arch</h1>
+        </header>
+      </div>
+
+      <!-- Lines -->
+
+      <div class="page-lines">
+        <div class="container">
+          <div class="col-line col-xs-4">
+            <div class="line"></div>
+          </div>
+          <div class="col-line col-xs-4">
+            <div class="line"></div>
+          </div>
+          <div class="col-line col-xs-4">
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="content">   
+    
+      <!-- About  -->
+
+      <section id="about" class="about section">
+        <div class="container">
+          <div class="entry">
+            <h3 class="entry-title" id="about-Header">we turn ideas into works of art.</h3>
+            <p class="entry-text" id="about-Paragraph">For each project we establish relationships with partners who we know will help us create added value for your project. As well as bringing together the public and private sectors, we make sector-overarching links to gather knowledge and to learn from each other. The way we undertake projects is based on permanently applying values that reinforce each other: socio-cultural value, experiental value, building-technical value and economical value.  This way of working allows us to raise your project to a higher level.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services -->
+
+      <section id="services" class="services section">
+        <div class="container">
+          <header class="section-header">
+            <h2 class="section-title" id="about-ourservice">Our Services</h2>
+          </header>
+          <div class="section-content">
+            <div class="row-services row-base row">
+              <div class="col-base col-service col-sm-6 col-md-4 wow fadeInUp">
+                <div class="service-item">
+                  <img alt="" src="img/img-icon/icon-architecture.png">
+                  <h4 id="about-ourservice1">Architecture</h4>
+                  <p id="about-ourservice-paragraph1">For each project we establish relationships with partners who we know will help us create added value for your project. As well as bringing together the public and private sectors, we make sector-overarching links to gather knowledge and 
+                  to learn from each other. The way 
+                  we undertake projects is based 
+                  on permanently applying.</p>
+                </div>
+              </div>
+              <div class="col-base col-service col-sm-6 col-md-4 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="service-item">
+                  <img alt="" src="img/img-icon/icon-interiors.png">
+                  <h4 id="about-ourservice2">interiors</h4>
+                  <p id="about-ourservice-paragraph2"></pid>For each project we establish relationships with partners who we know will help us create added value for your project. As well as bringing together the public and private sectors, we make sector-overarching links to gather knowledge and 
+                  to learn from each other. The way 
+                  we undertake projects is based 
+                  on permanently applying.</p>
+                </div>
+              </div>
+              <div class="clearfix visible-sm"></div>
+              <div class="col-base col-service col-sm-6 col-md-4 wow fadeInUp" data-wow-delay="0.6s">
+                <div class="service-item">
+                  <img alt="" src="img/img-icon/icon-planing.png">
+                  <h4 id="about-ourservice3">Planing</h4>
+                  <p id="about-ourservice-paragraph3"></p>For each project we establish relationships with partners who we know will help us create added value for your project. As well as bringing together the public and private sectors, we make sector-overarching links to gather knowledge and 
+                  to learn from each other. The way 
+                  we undertake projects is based 
+                  on permanently applying.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Objects -->
+
+    
+
+      <!-- Contacts -->
+
+      <section class="contacts section">
+        <div class="container">
+          <header class="section-header">
+            <h2 class="section-title" id="about-intouch">Get in touch</h2>
+          </header>
+          <div class="section-content">
+            <div class="row-base row">
+              <div class="col-address col-base col-md-4">
+                <div id="aboutcontact">+7 (212) 654-33-35</div>
+                <div id="aboutcontact2">+7 (212) 287-85-22</div>
+                <div id="aboutemail">info@goarch.com</div>
+                <div id="aboutaddress">USA, New York, 57 Quigley Bridge</div>
+              </div>
+              <div class="col-base  col-md-8">
+                <form class="js-ajax-form">
+                  <div class="row-field row">
+                    <div class="col-field col-sm-6 col-md-4">
+                      <div class="form-group">
+                        <input type="text" class="form-control" name="name" placeholder="Name">
+                      </div>
+                      <div class="form-group">
+                        <input type="email" class="form-control" name="email" required placeholder="Email *">
+                      </div>
+                    </div>
+                    <div class="col-field col-sm-6 col-md-4">
+                      <div class="form-group">
+                        <input type="tel" class="form-control" name="phone" placeholder="Phone">
+                      </div>
+                      <div class="form-group">
+                        <input type="text" class="form-control" name="company" placeholder="Company">
+                      </div>
+                    </div>
+                    <div class="col-field col-sm-12 col-md-4">
+                      <div class="form-group">
+                        <textarea class="form-control" name="message" placeholder="Message"></textarea>
+                      </div>
+                    </div>
+                    <div class="col-message col-field col-sm-12">
+                      <div class="form-group">
+                        <div class="success-message"><i class="fa fa-check text-primary"></i> Thank you!. Your message is successfully sent...</div>
+                        <div class="error-message">We're sorry, but something went wrong</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-submit text-right"><button class="btn btn-shadow-2 wow swing">Send <i class="icon-next"></i></button></div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+
+      <footer id="footer" class="footer">
+        <div class="container">
+          <div class="row-base row">
+            <div class="col-base text-left-md col-md-4">
+              <a href="#" class="brand" id="logo">
+                thefeathercompanyarch
+              </a>
+            </div>
+            <div class="text-center-md col-base col-md-4" id="link1">
+      
+              by Murren20
+      
+            </div>
+            <div class="text-right-md col-base col-md-4" id="link2">
+              © thefeathercompanyarch 2016. All Rights Reserved.
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <!-- Lines -->
+
+      <div class="page-lines">
+        <div class="container">
+          <div class="col-line col-xs-4">
+            <div class="line"></div>
+          </div>
+          <div class="col-line col-xs-4">
+            <div class="line"></div>
+          </div>
+          <div class="col-line col-xs-4">
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<div id="popup" class="popup">
+  <form id="popupForm"
+    style="text-align: center; padding: 20px; background-color: #f4f4f4; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+    <input type="hidden" id="element_id" name="element_id">
+    <input type="file" id="choose_field" name="choose_field" class="hidden" />
+    <textarea id="popupInput" name="popupInput"
+      style="width:100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box;"></textarea>
+    <div style="display: flex; justify-content: space-between;">
+      <button onclick="closePopup()"
+        style="flex-grow: 1; margin-right: 10px; background-color: #f44336; color: white; padding: 10px; border: none; border-radius: 5px; cursor: pointer;">Close</button>
+      <button type="submit"
+        style="flex-grow: 1; background-color: #4caf50; color: white; padding: 10px; border: none; border-radius: 5px; cursor: pointer;">Update</button>
+    </div>
+  </form>
+
+</div>
+<!-- SCRIPTS -->
+<script>
+  const globals = { data: null, attrBgImg: ['attrBgImg'], isPopupOpened: false }
+  function generateUUID() {
+    if (crypto && crypto.getRandomValues) {
+      // Use crypto API for better randomness
+      const uuidArray = new Uint32Array(4);
+      crypto.getRandomValues(uuidArray);
+
+      // Set version (4) and variant bits (2 in the most significant byte)
+      uuidArray[2] = (uuidArray[2] & 0xFFFF0FFF) | 0x4000;
+      uuidArray[3] = (uuidArray[3] & 0x3FFFFFFF) | 0x80000000;
+
+      // Convert to hexadecimal and format as UUID
+      const parts = Array.from(uuidArray, num => num.toString(16).padStart(8, '0'));
+      return `${parts[0]}-${parts[1]}-${parts[2]}-${parts[3]}`;
+    } else {
+      // Fallback for browsers that don't support crypto API
+      console.warn('crypto.getRandomValues not supported, falling back to pseudo-random UUID');
+
+      return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
+        const r = Math.random() * 16 | 0;
+        const v = c === 'x' ? r : (r & 0x3 | 0x8);
+        return v.toString(16);
+      });
+    }
+  }
+  function closePopup() {
+    var popup = document.getElementById("popup");
+    popup.style.display = "none";
+    document.getElementById("popupInput").value = ''
+    document.getElementById("element_id").value = ''
+    globals.isPopupOpened = false
+  }
+  function openPopup(elementId) {
+    var popup = document.getElementById("popup");
+    popup.style.display = "block";
+    globals.isPopupOpened = true
+    const ele = document.getElementById(elementId)
+    let type = "text"
+    document.getElementById("popupInput").value = ele?.innerHTML
+    document.getElementById("element_id").value = elementId
+    const isImageTag = ele instanceof HTMLImageElement
+    // const cmsField = data.cms?.find(item => item.key == elementId)
+
+    if (ele) {
+      if (isImageTag) {
+        document.querySelector('#choose_field').classList.remove('hidden')
+        /* if (attrBgImg.includes(elementId)) {
+           document.getElementById("popupInput").value = ele?.getAttribute('data-bg-image')
+         } else {
+           document.getElementById("popupInput").value = ele?.src
+         } */
+        document.getElementById("popupInput").value = ele?.src
+
+      } else {
+        document.querySelector('#choose_field').classList.add('hidden')
+        document.getElementById("popupInput").value = ele?.innerHTML
+      }
+      document.getElementById("element_id").value = elementId
+    }
+  }
+  async function fetchData() {
+    try {
+      var apiUrl = "https://cms-managment.vercel.app/cms/api/page-data/tfc/about_page";
+
+      // Fetch data from the API
+      const response = await fetch(apiUrl);
+      console.log("Responseeee", response);
+
+      if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+      }
+
+      const data = await response.json();
+
+      // array of ids whose data-bg-image needs to be set rather than innerHTML
+      const attrBgImg = ['background_image']
+
+      globals.data = data
+
+      console.log("Dataaaa", data.cms);
+      /* function openPopup(elementId) {
+           var popupContent = document.getElementById("popupContent");
+           popupContent.textContent = "Clicked Element ID: " + elementId;
+
+           var popup = document.getElementById("popup");
+           popup.style.display = "block";
+       }*/
+
+
+
+
+      for (var i = 0; i < data.cms.length; i++) {
+        var key = data.cms[i].key;
+        var value = data.cms[i].value
+        var type = data.cms[i].type
+        var ele = document.getElementById(key)
+        console.log("Keyyyy", key, i)
+
+        if (ele) {
+          console.log("Eleee", ele)
+          /*ele.addEventListener('click', e => {
+            e.preventDefault()
+            console.log(e.target.id)
+            openPopup(e.target.id);
+          })*/
+
+          if (type == 'image') {
+            if (attrBgImg.includes(key)) {
+              ele.setAttribute('data-bg-image', value)
+              ele.style.cssText = `background-image:url(${value}) !important;`
+            } else {
+              ele.src = value
+            }
+          } else {
+            ele.innerHTML = value;
+          }
+
+        }
+        console.log("DataIII", data.cms[i])
+      }
+
+      // Display data in the div
+
+    } catch (error) {
+      console.error('Error fetching data:', error);
+      document.getElementById("dataDisplay").innerHTML = `Error fetching data: ${error.message}`;
+    }
+  }
+
+  function showImage(imagefile, elementId) {
+    // Create a new FileReader
+    const reader = new FileReader();
+
+    // Define the onload event for the reader
+    reader.onload = function (e) {
+      // Get the image element
+      const previewImage = document.getElementById(elementId);
+
+      // Set the source of the image element to the data URL of the selected file
+      previewImage.src = e.target.result;
+
+      // Display the image
+      previewImage.style.display = 'block';
+    };
+
+    // Read the selected file as a data URL
+    reader.readAsDataURL(imagefile);
+  }
+
+  // Call the fetchData function
+  fetchData();
+
+  async function updateImageApi(elementId, image) {
+    try {
+      let apiUrl = new URL(`https://cms-managment.vercel.app/cms/update-image-by-key/${elementId}`)
+      const fd = new FormData()
+      fd.append('editImage', image)
+      fd.append('id', elementId)
+      return fetch(apiUrl, {
+        body: fd,
+        method: 'PUT'
+      })
+    } catch (e) {
+      return null
+    }
+  }
+
+  function getQueryParameter(parameterName) {
+    // Get the URL of the current page
+    const urlParams = new URLSearchParams(window.location.search);
+
+    // Check if the parameter exists
+    if (urlParams.has(parameterName)) {
+      // Return the parameter value
+      return urlParams.get(parameterName);
+    } else {
+      // Return null or handle the case when the parameter is not found
+      return null;
+    }
+  }
+
+  document.getElementById('popupForm').addEventListener('submit', async (e) => {
+    e.preventDefault()
+    const fd = new FormData(e.target)
+
+    const popInput = fd.get('popupInput')
+    const elementId = fd.get('element_id')
+    const choose_field = fd.get('choose_field')
+    console.log(choose_field)
+    console.log(popInput, elementId)
+    let type = "text"
+    const ele = document.getElementById(elementId)
+    if (ele) {
+      const isImage = document.querySelector(`#${elementId}`) instanceof HTMLImageElement
+      // const cmsField = globals.data?.cms?.find(item => item.key == elementId)
+      // console.log(cmsField)
+      if (isImage) {
+        if (globals.attrBgImg.includes(elementId)) {
+          /* ele.setAttribute('data-bg-image', popInput)
+          if (choose_field instanceof File) {
+            console.log('updating image')
+            updateImageApi(cmsField?.id, choose_field).then(res => res.json()).then(res => console.log(res))
+            closePopup();
+            return;
+          } */
+        } else {
+          ele.src = popInput
+          if (choose_field instanceof File) {
+            // ele.src = choose_field.name
+            console.log('hello world----')
+            showImage(choose_field, elementId)
+            console.log('updating image')
+            // updateImageApi(cmsField?.id, choose_field).then(res => res.json()).then(res => console.log(res))
+            closePopup()
+            return;
+          }
+        }
+      } else {
+        ele.innerHTML = popInput
+      }
+    }
+    const apiUrl = `https://cms-managment.vercel.app/cms/update-by-key/${elementId}/about_page/tfc`;
+
+    const requestBody = {
+      value: popInput,
+    };
+
+    fetch(apiUrl, {
+      method: 'PUT', // or 'PATCH' depending on your API
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(requestBody),
+    })
+      .then(response => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+        return response.json();
+      })
+      .then(data => {
+        // Process the data from the API response
+        closePopup();
+        console.log("closePopup")
+        console.log(data);
+      })
+      .catch(error => {
+        console.error('Fetch error:', error);
+      });
+
+  })
+
+  document.addEventListener('click', e => {
+    let id = e.target.id
+    const excludedIds = ['popup',]
+    if (getQueryParameter('edit') == 'true') {
+      if (!id && !e.target.closest('#popup')) {
+        id = generateUUID()
+        e.target.id = id
+        openPopup(id)
+      } else if (id && !excludedIds.includes(id) && !globals.isPopupOpened) {
+        openPopup(id)
+      }
+    }
+  })
+
+  let isEditable = getQueryParameter('edit') == 'true'
+    if (isEditable) {
+      //console.log("text",document.body.textContent) // get whole html text
+      document.querySelectorAll('a').forEach(item => {
+        if (item?.href?.length && item.href[0] != '#') {
+          const url = new URL(item.href)
+          console.log("URL", url)
+          url.searchParams.set('edit', 'true')
+          item.href = url.toString()
+        }
+      })
+    }
+
+</script>
+
+
+<style>
+  /* Styles for the popup */
+  .popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    z-index: 999;
+  }
+</style>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/jquery.stellar.min.js"></script>
+<script src="js/jquery.magnific-popup.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/interface.js"></script> 
+</body>
+</html>
