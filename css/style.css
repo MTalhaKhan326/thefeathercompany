@@ -612,10 +612,10 @@ label.error{
   z-index: 4;
   left: 0;
   top:0;
-  width: 39.47vmin;
-  height: 40.7vmin;
-  padding: 4.8vmin 2em 4.8vmin;
-  background-color: #f6f5f3;
+  width: 22.47vmin;
+  /* height: 40.7vmin; */
+  /* padding: 4.8vmin 2em 4.8vmin; */
+  /* background-color: #f6f5f3; */
   text-align: center;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
